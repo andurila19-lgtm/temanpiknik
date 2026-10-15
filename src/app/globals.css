@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+:root {
+  /* Brand Color Tokens: Teman Piknik */
+  --color-primary-950: #0a1c14;
+  --color-primary-900: #0f2b1f;
+  --color-primary-800: #173d2d;
+  --color-primary-700: #1f4f3b;
+  --color-primary-600: #29644b;
+  --color-primary-500: #367d5f;
+  --color-primary-100: #e3ede8;
+  --color-primary-50: #f1f7f4;
+
+  --color-accent-700: #c2431a;
+  --color-accent-600: #d95328;
+  --color-accent-500: #eb6437;
+  --color-accent-400: #f27f57;
+  --color-accent-100: #feece5;
+  --color-accent-50: #fdf5f2;
+
+  --color-cream-50: #fbf9f5;
+  --color-cream-100: #f5f2eb;
+  --color-cream-200: #ebe6dc;
+  --color-cream-300: #ded8cb;
+
+  --color-charcoal-900: #161b18;
+  --color-charcoal-800: #252c28;
+  --color-charcoal-700: #3b4540;
+  --color-charcoal-600: #55625b;
+  --color-charcoal-500: #526058;
+
+  --background: var(--color-cream-50);
+  --foreground: var(--color-charcoal-900);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom travel brand utilities */
+.bg-cream-sand {
+  background-color: #f6f3ec;
+}
+
+.bg-forest-deep {
+  background-color: #123325;
+}
+
+.text-forest-deep {
+  color: #123325;
+}
+
+.text-accent-coral {
+  color: #eb6437;
+}
+
+.border-warm {
+  border-color: #e5dfd2;
+}
+
+/* Custom scrollbar for clean editorial look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ede4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfc7b7;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #29644b;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid #eb6437;
+  outline-offset: 2px;
+}
